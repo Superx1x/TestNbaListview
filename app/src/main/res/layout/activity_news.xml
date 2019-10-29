@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".NewsActivity">
+
+    <!--<ImageView-->
+        <!--android:id="@+id/img_nbanews"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="40dp"-->
+        <!--android:background="#dddddd"/>-->
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:stackFromBottom="true"
+        android:id="@+id/lv_news">
+        <!--android:stackFromBottom="true"//預設listView顯示在最下方-->
+    </ListView>
+
+    <LinearLayout
+        android:id="@+id/selectedBarLayoutNA"
+        style="@style/selectedBarLayout">
+        <Button
+            android:id="@+id/btn_scoresNA"
+            style="@style/selectedBarBtnScores"/>
+        <Button
+            android:id="@+id/btn_newsNA"
+            style="@style/selectedBarBtnNews"/>
+        <Button
+            android:id="@+id/btn_standingsNA"
+            style="@style/selectedBarBtnStandings"/>
+        <Button
+            android:id="@+id/btn_playersNA"
+            style="@style/selectedBarBtnPlayers"/>
+        <Button
+            android:id="@+id/btn_videoNA"
+            style="@style/selectedBarBtnVideo"/>
+    </LinearLayout>
+</LinearLayout>

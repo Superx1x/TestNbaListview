@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PlayersAllActivity"
+    android:orientation="vertical"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+    <!--android:focusable="true"-->
+    <!--android:focusableInTouchMode="true"-->
+    <!--為了取消EditText的鍵盤自動跳出-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:focusable="true"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/et_InputSearchPlayerPAA"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginLeft="5dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:textSize="16sp"
+            android:hint="輸入查詢名字"
+            android:text=""/>
+
+        <Button
+            android:id="@+id/btn_searchPlayersPAA"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="3dp"
+            android:background="@mipmap/playersfinder"/>
+
+        <Button
+            android:id="@+id/btn_searchFavoPlayersPAA"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginRight="5dp"
+            android:background="@mipmap/playersisfavorite"/>
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/lv_playersPAA"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"/>
+
+    <LinearLayout
+        android:id="@+id/selectedBarLayoutPAA"
+        style="@style/selectedBarLayout">
+
+        <Button
+            android:id="@+id/btn_scoresPAA"
+            style="@style/selectedBarBtnScores"/>
+
+        <Button
+            android:id="@+id/btn_newsPAA"
+            style="@style/selectedBarBtnNews"/>
+
+        <Button
+            android:id="@+id/btn_standingsPAA"
+            style="@style/selectedBarBtnStandings"/>
+
+        <Button
+            android:id="@+id/btn_playersPAA"
+            style="@style/selectedBarBtnPlayers"/>
+
+        <Button
+            android:id="@+id/btn_videoPAA"
+            style="@style/selectedBarBtnVideo"/>
+    </LinearLayout>
+</LinearLayout>

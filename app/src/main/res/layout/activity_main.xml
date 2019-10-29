@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <CalendarView
+        android:id="@+id/ca_datepicker"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/btn_showDate"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#002937"
+        android:textColor="#ffffff"
+        android:textSize="16sp"
+        android:text="Date" />
+
+    <Button
+        android:id="@+id/btn_returnToday"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#1568b8"
+        android:textColor="#ffffff"
+        android:textSize="16sp"
+        android:text="回今天" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/tv_showNoGame"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:text="本日沒有排定賽事" />
+
+        <ListView
+            android:id="@+id/lv_dailyscoreboard"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"></ListView>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/selectedBarLayout"
+        style="@style/selectedBarLayout">
+        <Button
+            android:id="@+id/btn_scores"
+            style="@style/selectedBarBtnScores"/>
+        <Button
+            android:id="@+id/btn_news"
+            style="@style/selectedBarBtnNews"/>
+        <Button
+            android:id="@+id/btn_standings"
+            style="@style/selectedBarBtnStandings"/>
+        <Button
+            android:id="@+id/btn_players"
+            style="@style/selectedBarBtnPlayers"/>
+        <Button
+            android:id="@+id/btn_video"
+            style="@style/selectedBarBtnVideo"/>
+    </LinearLayout>
+
+</LinearLayout>

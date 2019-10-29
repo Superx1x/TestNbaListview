@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PlayerSingleActivity"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:id="@+id/sv_PASin"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="#dddddd">
+
+            <LinearLayout
+                android:id="@+id/playerSinLayout"
+                android:layout_width="match_parent"
+                android:layout_height="360dp"
+                android:layout_margin="10dp"
+                android:background="#ffffff"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_namePASin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:lines="1"
+                    android:paddingLeft="5dp"
+                    android:text="Giannis Antetokounmpo"
+                    android:textColor="#000000"
+                    android:textSize="26sp" />
+
+                <LinearLayout
+                    android:id="@+id/playerSinHideLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:id="@+id/playerSinDataRowLayout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+                        <LinearLayout
+                            android:id="@+id/playerSinDataRowLayoutFirst"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="5dp"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:id="@+id/tv_heightPASin"
+                                android:layout_width="62dp"
+                                android:layout_height="28dp"
+                                android:gravity="bottom"
+                                android:text="2.01m" />
+                            <TextView
+                                android:id="@+id/tv_weightPASin"
+                                android:layout_width="62dp"
+                                android:layout_height="28dp"
+                                android:gravity="bottom"
+                                android:text="104.3kg" />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:id="@+id/playerSinDataRowLayoutSecond"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="5dp"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:id="@+id/tv_forPtsPASin"
+                                android:layout_width="62dp"
+                                android:layout_height="28dp"
+                                android:gravity="bottom"
+                                android:text="Pts" />
+                            <TextView
+                                android:id="@+id/tv_forRebPASin"
+                                android:layout_width="62dp"
+                                android:layout_height="28dp"
+                                android:gravity="bottom"
+                                android:text="Reb" />
+                            <TextView
+                                android:id="@+id/tv_forAstPASin"
+                                android:layout_width="62dp"
+                                android:layout_height="28dp"
+                                android:gravity="bottom"
+                                android:text="Ast" />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:id="@+id/playerSinDataRowLayoutThree"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="5dp"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:id="@+id/tv_ptsPASin"
+                                android:layout_width="62dp"
+                                android:layout_height="56dp"
+                                android:textSize="24sp"
+                                android:text="26.6" />
+                            <TextView
+                                android:id="@+id/tv_rebPASin"
+                                android:layout_width="62dp"
+                                android:layout_height="56dp"
+                                android:textSize="24sp"
+                                android:text="7.3" />
+                            <TextView
+                                android:id="@+id/tv_astPASin"
+                                android:layout_width="62dp"
+                                android:layout_height="56dp"
+                                android:textSize="24sp"
+                                android:text="3.3" />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:id="@+id/playerSinDataRowLayoutFour"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="5dp"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:id="@+id/tv_forFgPASin"
+                                android:layout_width="62dp"
+                                android:layout_height="28dp"
+                                android:gravity="bottom"
+                                android:text="FG" />
+
+                            <TextView
+                                android:id="@+id/tv_forThreepPASin"
+                                android:layout_width="62dp"
+                                android:layout_height="28dp"
+                                android:gravity="bottom"
+                                android:text="3P" />
+
+                            <TextView
+                                android:id="@+id/tv_forFtPASin"
+                                android:layout_width="62dp"
+                                android:layout_height="28dp"
+                                android:gravity="bottom"
+                                android:text="FT" />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:id="@+id/playerSinDataRowLayoutFive"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="5dp"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:id="@+id/tv_fgPASin"
+                                android:layout_width="62dp"
+                                android:layout_height="56dp"
+                                android:textSize="20sp"
+                                android:text="49.6%" />
+
+                            <TextView
+                                android:id="@+id/tv_threepPASin"
+                                android:layout_width="62dp"
+                                android:layout_height="56dp"
+                                android:textSize="20sp"
+                                android:text="85.5%" />
+
+                            <TextView
+                                android:id="@+id/tv_ftPASin"
+                                android:layout_width="62dp"
+                                android:layout_height="56dp"
+                                android:textSize="20sp"
+                                android:text="37.1%" />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:id="@+id/playerSinDataRowLayoutSix"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="5dp"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:id="@+id/tv_forBornPASin"
+                                android:layout_width="40dp"
+                                android:layout_height="28dp"
+                                android:text="Born:" />
+                            <TextView
+                                android:id="@+id/tv_bornPASin"
+                                android:layout_width="100dp"
+                                android:layout_height="28dp"
+                                android:text="06/29/1991" />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:id="@+id/playerSinDataRowLayoutSeven"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="5dp"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:id="@+id/tv_forAgePASin"
+                                android:layout_width="34dp"
+                                android:layout_height="28dp"
+                                android:text="Age:" />
+                            <TextView
+                                android:id="@+id/tv_agePASin"
+                                android:layout_width="wrap_content"
+                                android:layout_height="28dp"
+                                android:text="31" />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:id="@+id/playerSinDataRowLayoutEight"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="5dp"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:id="@+id/tv_forYearsPASin"
+                                android:layout_width="90dp"
+                                android:layout_height="28dp"
+                                android:text="Years in NBA:" />
+                            <TextView
+                                android:id="@+id/tv_yearsPASin"
+                                android:layout_width="wrap_content"
+                                android:layout_height="28dp"
+                                android:text="8" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <ImageView
+                        android:id="@+id/img_photoBodyPASin"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@mipmap/playersheadbody" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_morePASin"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:textSize="18dp"
+                android:textColor="#ffffff"
+                android:background="#1568b8"
+                android:text="更多歷年數據" />
+
+            <WebView
+                android:id="@+id/webView_morePASin"
+                android:layout_width="match_parent"
+                android:layout_height="2200dp"/>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

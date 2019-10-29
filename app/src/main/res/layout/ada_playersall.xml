@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/PlayersLayoutApaa"
+    android:layout_width="match_parent"
+    android:layout_height="120dp"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/img_photoHeadApaa"
+        android:layout_width="128dp"
+        android:layout_height="120dp"
+        android:paddingLeft="10dp"
+        app:srcCompat="@mipmap/playershead" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="120dp"
+        android:layout_weight="1"
+        android:paddingLeft="10dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_nameApaa"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="bottom"
+                android:textSize="20sp"
+                android:textColor="#000000"
+                android:lines="1"
+                android:ellipsize="end"
+                android:text="Kawhi-Leonard" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_numberApaa"
+                android:layout_width="50dp"
+                android:layout_height="35dp"
+                android:gravity="center_vertical"
+                android:text="#34" />
+
+            <TextView
+                android:id="@+id/tv_numberLineApaa"
+                android:layout_width="15dp"
+                android:layout_height="35dp"
+                android:gravity="center_vertical"
+                android:text="|" />
+
+            <TextView
+                android:id="@+id/tv_positionApaa"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:gravity="center_vertical"
+                android:layout_weight="1"
+                android:text="F-C" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_heightApaa"
+                android:layout_width="50dp"
+                android:layout_height="35dp"
+                android:text="2.11m" />
+
+            <TextView
+                android:id="@+id/tv_heightLinetApaa"
+                android:layout_width="15dp"
+                android:layout_height="35dp"
+                android:text="|" />
+
+            <TextView
+                android:id="@+id/tv_weightApaa"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_weight="1"
+                android:text="109.8kg" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="72dp"
+        android:layout_height="120dp">
+
+        <ImageView
+            android:id="@+id/img_favouriteApaa"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="15dp"
+            app:srcCompat="@mipmap/playersnotfavorite"/>
+
+        <ImageView
+            android:id="@+id/img_logoApaa"
+            android:layout_width="72dp"
+            android:layout_height="120dp"
+            android:paddingTop="45dp"
+            android:paddingRight="15dp"
+            app:srcCompat="@mipmap/torlogo" />
+    </RelativeLayout>
+</LinearLayout>

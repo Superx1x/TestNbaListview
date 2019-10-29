@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#dddddd"
+    android:orientation="vertical"
+    tools:context=".VideoActivity">
+
+    <WebView
+        android:id="@+id/webView_videoVA"
+        android:layout_width="match_parent"
+        android:layout_height="210dp" />
+
+    <TextView
+        android:id="@+id/tv_videoVA"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center_vertical"
+        android:padding="10dp"
+        android:lines="1"
+        android:ellipsize="end"
+        android:background="#bbbbbb"
+        android:text="TextView" />
+
+    <ListView
+        android:id="@+id/lv_videoVA"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"/>
+
+    <LinearLayout
+        android:id="@+id/selectedBarLayoutVA"
+        style="@style/selectedBarLayout">
+
+        <Button
+            android:id="@+id/btn_scoresVA"
+            style="@style/selectedBarBtnScores"/>
+
+        <Button
+            android:id="@+id/btn_newsVA"
+            style="@style/selectedBarBtnNews"/>
+
+        <Button
+            android:id="@+id/btn_standingsVA"
+            style="@style/selectedBarBtnStandings"/>
+
+        <Button
+            android:id="@+id/btn_playersVA"
+            style="@style/selectedBarBtnPlayers"/>
+
+        <Button
+            android:id="@+id/btn_videoVA"
+            style="@style/selectedBarBtnVideo"/>
+    </LinearLayout>
+</LinearLayout>

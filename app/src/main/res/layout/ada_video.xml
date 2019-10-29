@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#dddddd">
+
+    <LinearLayout
+        android:id="@+id/VideoLayoutAVA"
+        android:layout_width="match_parent"
+        android:layout_height="176dp"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="#ffffff">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="125dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/img_videoPhotoAVA"
+                android:layout_width="125dp"
+                android:layout_height="125dp"
+                app:srcCompat="@mipmap/donovanmitchell" />
+
+            <TextView
+                android:id="@+id/tv_titleAVA"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:padding="10dp"
+                android:textSize="16sp"
+                android:textColor="#000000"
+                android:text="Donovan Mitchell putting the league on notice with ferocious dunks in sophomore season" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_videoLine"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@drawable/videoline"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_nameAVA"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:padding="10dp"
+                android:textSize="14sp"
+                android:text="Donovan-Mitchell"/>
+
+            <!--<Button-->
+                <!--android:id="@+id/btn_favouriteAVA"-->
+                <!--android:layout_width="50dp"-->
+                <!--android:layout_height="50dp"-->
+                <!--android:background="#ffffff"-->
+                <!--android:text="" />-->
+
+            <!--<Button-->
+                <!--android:id="@+id/btn_shareAVA"-->
+                <!--android:layout_width="50dp"-->
+                <!--android:layout_height="50dp"-->
+                <!--android:background="#ffffff"-->
+                <!--android:layout_marginRight="10dp"-->
+                <!--android:text="" />-->
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

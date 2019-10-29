@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".StandingsActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/btn_leagueSA"
+            android:text="聯盟"
+            style="@style/StandingsChooseRow"/>
+        <Button
+            android:id="@+id/btn_confSA"
+            android:text="分區"
+            style="@style/StandingsChooseRow"/>
+        <Button
+            android:id="@+id/btn_divSA"
+            android:text="分組"
+            style="@style/StandingsChooseRow"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_showEastSA"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:background="#1568b8"
+        android:gravity="center"
+        android:text="東部聯盟"
+        android:textColor="#ffffff" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_showEastTeamSA"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:text="球隊"
+            style="@style/adaStandingsShowBar"/>
+
+        <TextView
+            android:id="@+id/tv_showEastWinSA"
+            android:layout_width="40dp"
+            android:text="勝"
+            style="@style/adaStandingsShowBar"/>
+
+        <TextView
+            android:id="@+id/tv_showEastLossSA"
+            android:layout_width="40dp"
+            android:text="負"
+            style="@style/adaStandingsShowBar"/>
+
+        <TextView
+            android:id="@+id/tv_showEastPerSA"
+            android:layout_width="64dp"
+            android:text="勝率"
+            style="@style/adaStandingsShowBar"/>
+
+        <TextView
+            android:id="@+id/tv_showEastGbSA"
+            android:layout_width="40dp"
+            android:text="勝差"
+            style="@style/adaStandingsShowBar"/>
+    </LinearLayout>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:id="@+id/lv_standingsEastWestOne">
+    </ListView>
+
+    <!--<ListView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_weight="1"-->
+        <!--android:id="@+id/lv_standingsEast">-->
+    <!--</ListView>-->
+
+    <!--<TextView-->
+        <!--android:id="@+id/tv_showWestSA"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="20dp"-->
+        <!--android:background="#1568b8"-->
+        <!--android:gravity="center"-->
+        <!--android:text="西部聯盟"-->
+        <!--android:textColor="#ffffff" />-->
+
+    <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="20dp"-->
+        <!--android:orientation="horizontal">-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/tv_showWestTeamSA"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_weight="1"-->
+            <!--android:text="球隊"-->
+            <!--style="@style/adaStandingsShowBar"/>-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/tv_showWestWinSA"-->
+            <!--android:layout_width="40dp"-->
+            <!--android:text="勝"-->
+            <!--style="@style/adaStandingsShowBar"/>-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/tv_showWestLossSA"-->
+            <!--android:layout_width="40dp"-->
+            <!--android:text="負"-->
+            <!--style="@style/adaStandingsShowBar"/>-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/tv_showWestPerSA"-->
+            <!--android:layout_width="64dp"-->
+            <!--android:text="勝率"-->
+            <!--style="@style/adaStandingsShowBar"/>-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/tv_showWestGbSA"-->
+            <!--android:layout_width="40dp"-->
+            <!--android:text="勝差"-->
+            <!--style="@style/adaStandingsShowBar"/>-->
+    <!--</LinearLayout>-->
+
+    <!--<ListView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_weight="1"-->
+        <!--android:id="@+id/lv_standingsWest">-->
+    <!--</ListView>-->
+
+    <LinearLayout
+        android:id="@+id/selectedBarLayoutSA"
+        style="@style/selectedBarLayout">
+        <Button
+            android:id="@+id/btn_scoresSA"
+            style="@style/selectedBarBtnScores"/>
+        <Button
+            android:id="@+id/btn_newsSA"
+            style="@style/selectedBarBtnNews"/>
+        <Button
+            android:id="@+id/btn_standingsSA"
+            style="@style/selectedBarBtnStandings"/>
+        <Button
+            android:id="@+id/btn_playersSA"
+            style="@style/selectedBarBtnPlayers"/>
+        <Button
+            android:id="@+id/btn_videoSA"
+            style="@style/selectedBarBtnVideo"/>
+    </LinearLayout>
+
+</LinearLayout>
+

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+
+    <TextView
+        android:id="@+id/tv_rankingAsa"
+        android:layout_width="16dp"
+        android:paddingLeft="2dp"
+        android:text="12"
+        style="@style/adaStandingsRow"/>
+
+    <ImageView
+        android:id="@+id/img_logoAsa"
+        android:layout_width="48dp"
+        android:padding="6dp"
+        app:srcCompat="@mipmap/bucks"
+        style="@style/adaStandingsRow"/>
+
+    <TextView
+        android:id="@+id/tv_teamAsa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:text="Bucks"/>
+
+    <TextView
+        android:id="@+id/tv_winAsa"
+        android:layout_width="40dp"
+        android:text="60"
+        style="@style/adaStandingsRow"/>
+
+    <TextView
+        android:id="@+id/tv_lossAsa"
+        android:layout_width="40dp"
+        android:text="22"
+        style="@style/adaStandingsRow"/>
+
+    <TextView
+        android:id="@+id/tv_perAsa"
+        android:layout_width="64dp"
+        android:text="0.732"
+        style="@style/adaStandingsRow"/>
+
+    <TextView
+        android:id="@+id/tv_gbAsa"
+        android:layout_width="40dp"
+        android:text="12"
+        style="@style/adaStandingsRow"/>
+
+
+
+    <!--<TextView-->
+        <!--android:id="@+id/tv_confAsa"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_weight="4"-->
+        <!--android:text="40-12"-->
+        <!--style="@style/adaStandingsRow"/>-->
+
+    <!--<TextView-->
+        <!--android:id="@+id/tv_divAsa"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_weight="2"-->
+        <!--android:text="14-2"-->
+        <!--style="@style/adaStandingsRow"/>-->
+
+    <!--<TextView-->
+        <!--android:id="@+id/tv_homeAsa"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_weight="4"-->
+        <!--android:text="33-8"-->
+        <!--style="@style/adaStandingsRow"/>-->
+
+    <!--<TextView-->
+        <!--android:id="@+id/tv_roadAsa"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_weight="4"-->
+        <!--android:text="27-14"-->
+        <!--style="@style/adaStandingsRow"/>-->
+
+    <!--<TextView-->
+        <!--android:id="@+id/tv_lasttenAsa"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_weight="2"-->
+        <!--android:text="7-3"-->
+        <!--style="@style/adaStandingsRow"/>-->
+
+    <!--<TextView-->
+        <!--android:id="@+id/tv_streakAsa"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_weight="4"-->
+        <!--android:text="Lost 1"-->
+        <!--style="@style/adaStandingsRow"/>-->
+</LinearLayout>
